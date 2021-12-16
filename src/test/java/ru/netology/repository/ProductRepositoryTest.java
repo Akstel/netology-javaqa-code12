@@ -7,12 +7,11 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class ProductRepositoryTest {
-    private ProductRepository repository = new ProductRepository();
     Product first = new Product(1, "Peter I", 1000);
     Product second = new Product(2, "Peter I", 1000);
     Product third = new Product(3, "Peter I", 1000);
     Product fourth = new Product(4, "Peter I", 1000);
-
+    private ProductRepository repository = new ProductRepository();
 
     @Test
     public void shouldSaveOneItem() {
@@ -334,5 +333,4 @@ class ProductRepositoryTest {
         });
 
     }
-
 }
